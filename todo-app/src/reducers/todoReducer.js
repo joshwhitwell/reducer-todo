@@ -11,8 +11,6 @@ export const reducer = (state, action) => {
                     id: Date.now()
                 }
             ]
-        case 'CLEAR_COMPLETED':
-            return state
         case 'TOGGLE_COMPLETED':
             return state.map(todo =>
                 todo.id === action.payload ?
@@ -21,6 +19,8 @@ export const reducer = (state, action) => {
                         completed: !todo.completed,
                     }
                     : todo)
+        case 'CLEAR_COMPLETED':
+            return state.filter(todo => todo.completed === false)
         default:
             return state
     }
