@@ -12,19 +12,80 @@ body {
   text-align: center;
 }
 
-ul {
-  list-style-position: inside;
-  padding: 0;
-}
-
-li {
+p {
   border: 1px solid black;
   width: 25%;
   margin: 0 auto;
   text-align: left;
-  padding-left: 25px;
+  padding-left: 15px;
 }
 
-.completed {
-  text-decoration: line-through;
+span {
+  margin-right: 15px;
+  font-size: 2rem;
+}
+
+i {
+  font-size: 2rem;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+}
+
+.check {
+  color: dodgerblue;
+}
+
+button {
+  padding: 1% 1.5%;
+  background-color: white;
+  border: 2px solid dodgerblue;
+  border-radius: 8px;
+  color: dodgerblue;
+  transition: all 0.2s ease-in-out;
+  margin: 1% 1.5%;
+}
+
+button:hover {
+  color: darkorange;
+  border-color: darkorange;
+  transition: all 0.2s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  background-color: white;
+  border: 2px solid dodgerblue;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  margin: 1.5%;
+}
+
+input:focus {
+  outline: none;
+  border-color: darkorange;
+  transition: all 0.2s ease-in-out;
+}
+
+input:hover {
+  border-color: darkorange;
+  transition: all 0.2s ease-in-out;
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  padding: 1%;
+  margin: 1%;
+  border-radius: 8px;
+  border: 2px solid dodgerblue;
 }
