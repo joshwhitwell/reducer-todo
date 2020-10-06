@@ -5,6 +5,7 @@ import { initialState, reducer } from '../reducers/todoReducer'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faCheckSquare, faSquare } from '@fortawesome/free-regular-svg-icons'
 
+import { addItem } from '../actions/index'
 
 export default function ToDoList() {
 
